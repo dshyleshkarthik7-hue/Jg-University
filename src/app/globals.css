@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050816;
+    color: #f8fafc;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Visual Glows & Borders matching reference image */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cyber-glow-container {
+  box-shadow: 0 0 25px rgba(0, 243, 255, 0.15), 0 0 50px rgba(188, 19, 254, 0.05);
+}
+
+.neon-border-cyan {
+  border: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+.cyber-grid-overlay {
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
